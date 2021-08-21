@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+  min-height: 100vh;
+  background-image: url("../Resources/css/images/MyLandingPageBG.png");
+  height: 100vh;
+}
+
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 20vh;
+  width: 20%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  backdrop-filter: blur(2rem);
+}
+
+.dashboard-layout{
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer"; 
+}
+
+.header {
+  font-size: 35px;
+  font-display: justify;
+  padding-top: 10px;
+  padding-left: 20px;
+  grid-area: header;
+}
+
+.main {
+  font-size: 25px;
+  padding-top: 10px;
+  padding-left: 20px;
+  grid-area: main;
+}
+
+.footer {
+  padding-left:300px;
+  grid-area: footer;
+}
